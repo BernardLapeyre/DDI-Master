@@ -1,0 +1,4 @@
+    if (length(strindex(texte(i),'\\n"",')) == 0) then
+      // python n'aime pas qu'paragraphe se termine avec un ',' donc on rajoute un "  ", ca a l'air de convenir ...
+      fprintf(fichier_ipynb_outfile,'\t""   ""\n');
+    end
