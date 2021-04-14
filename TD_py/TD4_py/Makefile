@@ -6,7 +6,10 @@ NAMETD=$(shell echo "$(DOC)" | sed -e s/TD/td-/g)
 WEBLOCATION=/home/bl/Cermics/www/decision-incertain/$(NAMETD)
 CERMICS=195.221.193.114
 
-#NSP=/Applications/Nsp.app/Contents/MacOS/Nsp #-nw # -nw ne marche pas sur mac
+# Set path for nsp
+# for mac
+# NSP=/Applications/Nsp.app/Contents/MacOS/Nsp #-nw # -nw ne marche pas sur mac
+# for linux
 NSP=nsp -nw 
 
 all: $(DOC).ipynb $(DOC)_corrige.ipynb
