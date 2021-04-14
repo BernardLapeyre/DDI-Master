@@ -59,5 +59,5 @@ clean ::
 	       	  exit $$IER;;\
 	   	esac;\
 	done
-	rm *~
+	rm -f *~
 
