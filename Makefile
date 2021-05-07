@@ -8,6 +8,7 @@ all:
 	(cd TD_py && $(MAKE) $(MFLAGS) )
 
 clean:
+	rm -fr .ipynb_checkpoints
 	rm TD_py/TD0_py/TD0_master.ipynb
 	rm TD_py/TD1_py/TD1_master.ipynb 
 	rm TD_py/TD2_py/TD2_master.ipynb 
